@@ -1,0 +1,8 @@
+Dette er for folk som skal jobbe på spillet.
+all spill kode kan du finne i game folderen.
+databasen ligger på en virituell maskin som heter Årsoppgave-Debian.
+alt du trenger å gjre for å forandre ting i databasen er å bruke ssh til å koble til databasen.
+komandoen for å koble til databasen med ssh er "ssh thomasg@10.2.3.53". etter du har gjort det må du skrive inn passordet som er "dbMaskinDebian".
+webserveren ligger på en virituell maskin som heter "Ubuntu-Webserver".
+den må du logge inn manuelt for å gjøre forandringer.
+passordet til webserveren er "Webserver123".

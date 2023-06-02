@@ -1,4 +1,4 @@
-export default class TileMap{
+class TileMap{
     constructor(tileSize){
         this.tileSize = tileSize;
         this.wall = this.#image('BrickTile.png');
@@ -15,9 +15,9 @@ export default class TileMap{
         [1,1,1,1,1,1,1,1,1,1],
         [1,0,0,0,0,0,0,0,0,1],
         [1,0,0,0,0,0,0,0,0,1],
-        [1,0,0,0,0,1,0,0,0,1],
-        [1,0,0,0,0,1,0,0,0,1],
-        [1,0,0,1,1,1,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
         [1,1,1,1,1,1,1,1,1,1],
     ];
 

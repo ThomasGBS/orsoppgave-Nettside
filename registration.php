@@ -10,9 +10,9 @@
 <p>Registrer deg her:</p>
     <form method="post">
         <label for="brukernavn">Brukernavn:</label>
-        <input type="text" name="brukernavn" /> <br/>
+        <input type="text" name="brukernavn" recuired > <br/>
         <label for="passord">Passord:</label>
-        <input type="text" name="passord" /> <br/>
+        <input type="text" name="passord" recuired> <br/>
 
         <input type="submit" value="Registrer" name="submit">
     </form>
@@ -26,21 +26,25 @@
         $brukernavn = $_POST['brukernavn'];
         $passord = $_POST['passord'];
 
-        $dbc = mysqli_connect('localhost', 'root', '', 'logindb')
+        if($brukernavn != "" && $passord != ""){
+            $dbc = mysqli_connect('10.2.3.53', 'thomasg', 'Thomas', 'thomasg')
             or die('Error connecting to MySQL server.');
 
-        $query = "INSERT INTO users VALUES ('$brukernavn', '$passord')";
+            $query = "INSERT INTO users VALUES ('$brukernavn', '$passord', NULL)";
 
-        $result = mysqli_query($dbc, $query)
-            or die('Error querying database.');
+            $result = mysqli_query($dbc, $query)
+                or die('Error querying database.');
 
-        mysqli_close($dbc);
+            mysqli_close($dbc);
 
-        if($result){
-            echo "Takk for at du lagde bruker! Trykk <a href='index.php'> her </a> for à logge inn";
-        }else{
-            echo "Noe gikk galt, prov igjen!";
-        }
+            if($result){
+                echo "Takk for at du lagde bruker! Trykk <a href='index.php'> her </a> for à logge inn";
+            }else{
+                echo "Noe gikk galt, prov igjen!";
+            }
+            }
+
+        
     }
     
 ?>

@@ -1,0 +1,11 @@
+i spillet kan du bevege deg rundt med w, a, s og d. du kna også skyte baller med piltastene.
+
+W gjør sånn at du går oppover.
+A gjør sånn at du går til venstre.
+S gjør sånn at du går ned.
+D gjør sånn at du går til høyre.
+
+pil opp gjør sånn at du skyter oppover.
+pil til venstre gjør sånn at du skyter til venstre.
+pil ned gjør sånn at du skyter nedover.
+pil til høyre gjør sånn at du skyter til høyre,

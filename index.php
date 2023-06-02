@@ -25,7 +25,7 @@
         $brukernavn = $_POST['brukernavn'];
         $passord = $_POST['passord'];
 
-        $dbs = mysqli_connect('localhost', 'root', '', 'logindb')
+        $dbs = mysqli_connect('10.2.3.53', 'thomasg', 'Thomas', 'thomasg')
             or die('Error connecting to MySQL server');
 
         $query = "SELECT username, password from users where username='$brukernavn' and password='$passord'";

@@ -1,0 +1,18 @@
+DebianDB{
+	Hostname : debian-thomas
+	Username : thomasg
+	Root Password : debianDB123
+	Passord : dbMaskinDebian
+	Ip adress : 10.2.2.237
+	Mariadb:
+		Database thomasg:
+			User : 'thomasg'@'%'
+			Password : Thomas
+				
+}
+Ubuntu-Webserver{
+	Computername : thomasg-virtual-machine
+	Username : thomasg
+	Password : Webserver123
+	Ip adress : 10.2.2.239
+}
